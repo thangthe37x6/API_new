@@ -2,7 +2,7 @@
 
 <div class="d-flex justify-content-between">
     <div class=" p-2 m-2 shadow-sm border align-items-center justify-content-center text-center" style="color: blue; width: 150px; height: 40px;">
-        <a href="/api/register" style="text-decoration: none;">Create Faculty</a>
+        <a href="/api/register" style="text-decoration: none;">Create user</a>
     </div>
     <div class=" p-2 m-2">
         <form action="/" method="GET" class="d-flex">
@@ -16,8 +16,8 @@
     <thead class="table-primary">
         <tr>
             <th>#</th>
-            <th>Name</th>
-            <th>Number of CBGV</th>
+            <th>username</th>
+            <th>password</th>
             <th>ID</th>
             <th>Actions</th>
         </tr>
@@ -29,9 +29,9 @@
                 <td><%= faculties[i].name %></td>
                 <td><%= faculties[i].numberof %></td>
                 <td><%= faculties[i].id %></td>
-                <td class="d-flex justify-content-around">
+                <td class="d-flex justify-content-center">
                     <form action="/delete/<%= faculties[i]._id %>" method="POST" style="display:inline;">
-                        <button class="btn btn-danger" type="submit" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');">Delete</button>
+                        <button class="btn btn-danger" type="submit" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');">Delete user</button>
                     </form>
                 </td>
             </tr>
