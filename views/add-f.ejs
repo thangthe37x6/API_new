@@ -1,0 +1,25 @@
+<%- include('./layout/header') %>
+
+<div>
+    <a href="/">Back Home</a>
+</div>
+<div class="container-sm">
+    <div class="text-center">
+        <h3>update information </h3>
+        <p>you need to change at least one </p>
+        
+    </div>
+    <form action="/api/register" method="POST">
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">username</label>
+      <input name="name"  type="email"  class="form-control" placeholder="write name here" required>
+    </div>
+    <div class="mb-3">
+      <label for="disabledTextInput" class="form-label">password</label>
+      <input name="numberof" type="password"  class="form-control" placeholder="write in number CBGV" required>
+    </div>
+    <button type="submit" class="container-fluid border border-0" style="background-color: blue; color: white;">create</button>
+    </form>
+</div>
+
+<%- include('./layout/footer') %>
